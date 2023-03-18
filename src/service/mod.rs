@@ -12,7 +12,7 @@ mod sys_trash_service;
 mod sys_user_role_service;
 mod sys_user_service;
 
-pub use crate::config::config::ApplicationConfig;
+pub use crate::config::config::Setting;
 pub use cache_service::*;
 pub use mem_service::*;
 use once_cell::sync::Lazy;
@@ -40,7 +40,7 @@ macro_rules! pool {
 }
 
 pub struct ServiceContext {
-    pub config: ApplicationConfig,
+    pub config: Setting,
     pub rb: Rbatis,
     pub cache_service: CacheService,
     pub sys_res_service: SysResService,
@@ -82,7 +82,7 @@ impl ServiceContext {
 
 impl Default for ServiceContext {
     fn default() -> Self {
-        let config = ApplicationConfig::default();
+        let config = Setting::default();
         ServiceContext {
             rb: crate::domain::init_rbatis(&config),
             cache_service: CacheService::new(&config).unwrap(),

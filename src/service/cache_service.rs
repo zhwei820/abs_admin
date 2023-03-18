@@ -1,4 +1,4 @@
-use crate::config::config::ApplicationConfig;
+use crate::config::config::Setting;
 use crate::error::Result;
 use crate::service::{MemService, RedisService};
 use futures_util::future::BoxFuture;
@@ -21,7 +21,7 @@ pub struct CacheService {
 }
 
 impl CacheService {
-    pub fn new(cfg: &ApplicationConfig) -> crate::error::Result<Self> {
+    pub fn new(cfg: &Setting) -> crate::error::Result<Self> {
         match cfg.cache_type.as_str() {
             "mem" => {
                 println!("[abs_admin] cache_type: mem");

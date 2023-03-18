@@ -1,6 +1,6 @@
 /// Config
 #[derive(Debug, PartialEq, serde::Serialize, serde::Deserialize)]
-pub struct ApplicationConfig {
+pub struct Setting {
     pub debug: bool,
     pub server_url: String,
     pub redis_url: String,
@@ -22,11 +22,11 @@ pub struct ApplicationConfig {
     pub login_fail_retry_wait_sec: u64,
 }
 
-impl Default for ApplicationConfig {
+impl Default for Setting {
     fn default() -> Self {
-        let yml_data = include_str!("../../application.yml");
+        let yml_data = include_str!("./config.yml");
         //load config
-        let result: ApplicationConfig =
+        let result: Setting =
             serde_yaml::from_str(yml_data).expect("load config file fail");
         if result.debug {
             println!("[abs_admin] load config:{:?}", result);
@@ -37,3 +37,5 @@ impl Default for ApplicationConfig {
         result
     }
 }
+
+

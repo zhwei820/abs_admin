@@ -1,11 +1,11 @@
-use crate::service::ApplicationConfig;
+use crate::service::Setting;
 use rbatis::Rbatis;
 pub mod dto;
 pub mod mapper;
 pub mod table;
 pub mod vo;
 
-pub fn init_rbatis(config: &ApplicationConfig) -> Rbatis {
+pub fn init_rbatis(config: &Setting) -> Rbatis {
     let rbatis = Rbatis::new();
     if rbatis.is_debug_mode() == false && config.debug.eq(&true) {
         panic!(
