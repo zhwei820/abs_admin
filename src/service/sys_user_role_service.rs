@@ -1,7 +1,7 @@
 use std::collections::BTreeMap;
 
 use crate::domain::dto::{UserPageDTO, UserRoleAddDTO, UserRolePageDTO};
-use crate::domain::table::SysUserRole;
+use crate::domain::core::SysUserRole;
 use crate::domain::vo::user::SysUserVO;
 use crate::domain::vo::{SysResVO, SysRoleVO};
 use crate::error::Error;

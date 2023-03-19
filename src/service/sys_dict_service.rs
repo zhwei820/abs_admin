@@ -1,7 +1,7 @@
 use rbatis::sql::{Page, PageRequest};
 
 use crate::domain::dto::{DictEditDTO, DictPageDTO};
-use crate::domain::table::SysDict;
+use crate::domain::core::SysDict;
 use crate::domain::vo::SysDictVO;
 use crate::error::Error;
 use crate::error::Result;

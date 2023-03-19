@@ -1,4 +1,4 @@
-use crate::domain::table::{LoginCheck, SysUser, SysUserRole};
+use crate::domain::core::{LoginCheck, SysUser, SysUserRole};
 use crate::util::password_encoder::PasswordEncoder;
 use rbatis::object_id::ObjectId;
 use rbatis::rbdc::datetime::DateTime;

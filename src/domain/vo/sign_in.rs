@@ -1,4 +1,4 @@
-use crate::domain::table::SysUser;
+use crate::domain::core::SysUser;
 use crate::domain::vo::SysRoleVO;
 use serde::{Deserialize, Serialize};
 

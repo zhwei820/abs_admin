@@ -1,5 +1,5 @@
 use crate::domain::dto::{EmptyDTO, IdDTO, ResAddDTO, ResEditDTO, ResPageDTO};
-use crate::domain::table::SysRes;
+use crate::domain::core::SysRes;
 use crate::domain::vo::RespVO;
 use crate::service::CONTEXT;
 use actix_web::{web, Responder};

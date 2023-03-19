@@ -5,7 +5,7 @@ use rbatis::rbdc::types::datetime::DateTime;
 use rbatis::sql::page::{Page, PageRequest};
 
 use crate::domain::dto::{IdDTO, SignInDTO, UserAddDTO, UserEditDTO, UserPageDTO, UserRoleAddDTO};
-use crate::domain::table::{LoginCheck, SysUser};
+use crate::domain::core::{LoginCheck, SysUser};
 use crate::domain::vo::user::SysUserVO;
 use crate::domain::vo::{JWTToken, SignInVO, SysResVO};
 use crate::pool;

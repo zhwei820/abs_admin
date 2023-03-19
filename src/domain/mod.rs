@@ -1,8 +1,8 @@
 use crate::service::Setting;
 use rbatis::Rbatis;
 pub mod dto;
-pub mod mapper;
-pub mod table;
+pub mod core;
+pub mod persistence;
 pub mod vo;
 
 pub fn init_rbatis(config: &Setting) -> Rbatis {

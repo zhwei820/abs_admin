@@ -1,4 +1,4 @@
-use crate::domain::table::SysRes;
+use crate::domain::core::SysRes;
 use std::collections::HashMap;
 
 #[derive(Clone, Debug, serde::Serialize, serde::Deserialize)]

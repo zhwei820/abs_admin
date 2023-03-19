@@ -1,4 +1,4 @@
-use crate::domain::table::LoginCheck;
+use crate::domain::core::LoginCheck;
 use rbatis::rbdc::datetime::DateTime;
 ///Permission Resource Table
 #[derive(Clone, Debug, serde::Serialize, serde::Deserialize)]

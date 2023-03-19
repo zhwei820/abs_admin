@@ -1,4 +1,4 @@
-use crate::domain::table::SysDict;
+use crate::domain::core::SysDict;
 
 #[derive(Clone, Debug, serde::Serialize, serde::Deserialize)]
 pub struct SysDictVO {

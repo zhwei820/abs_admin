@@ -1,4 +1,4 @@
-use crate::domain::table::SysTrash;
+use crate::domain::core::SysTrash;
 use crate::pool;
 use rbatis::object_id::ObjectId;
 use rbatis::rbdc::datetime::DateTime;

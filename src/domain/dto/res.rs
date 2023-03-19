@@ -1,4 +1,4 @@
-use crate::domain::table::SysRes;
+use crate::domain::core::SysRes;
 use rbatis::object_id::ObjectId;
 use rbatis::rbdc::datetime::DateTime;
 use rbatis::sql::PageRequest;

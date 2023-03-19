@@ -1,5 +1,5 @@
 use crate::domain::dto::{RoleAddDTO, RoleEditDTO, RolePageDTO};
-use crate::domain::table::{SysRole, SysRoleRes, SysUserRole};
+use crate::domain::core::{SysRole, SysRoleRes, SysUserRole};
 use crate::domain::vo::{SysResVO, SysRoleVO};
 use crate::error::Result;
 use crate::pool;

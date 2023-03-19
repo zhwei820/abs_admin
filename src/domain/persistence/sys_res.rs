@@ -1,4 +1,4 @@
-use crate::domain::table::*;
+use crate::domain::core::*;
 //SysRes
 crud!(SysRes {});
 impl_select_page!(SysRes{select_page(dto: &crate::domain::dto::ResPageDTO) =>

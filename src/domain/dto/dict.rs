@@ -1,4 +1,4 @@
-use crate::domain::table::SysDict;
+use crate::domain::core::SysDict;
 use rbatis::rbdc::datetime::DateTime;
 use rbatis::sql::PageRequest;
 use serde::{Deserialize, Serialize};

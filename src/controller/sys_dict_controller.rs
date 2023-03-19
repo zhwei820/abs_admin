@@ -1,5 +1,5 @@
 use crate::domain::dto::{DictAddDTO, DictEditDTO, DictPageDTO, IdDTO};
-use crate::domain::table::SysDict;
+use crate::domain::core::SysDict;
 use crate::domain::vo::RespVO;
 use crate::service::CONTEXT;
 use actix_web::{web, Responder};
