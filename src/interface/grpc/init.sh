@@ -1,0 +1,1 @@
+volo init --includes=proto volo-example proto/volo_example.proto
