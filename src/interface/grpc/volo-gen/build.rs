@@ -1,3 +1,4 @@
 fn main() {
-    volo_build::ConfigBuilder::default().write().unwrap();
+    let res = volo_build::ConfigBuilder::default().write().unwrap();
+    println!("{:?}", res)
 }
