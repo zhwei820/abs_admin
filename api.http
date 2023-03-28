@@ -1,0 +1,42 @@
+###
+POST http://localhost:8000/admin/sys_res_page
+
+{}
+###
+POST http://localhost:8000/admin/sys_role_page
+
+{
+    "page":1,
+    "size":5
+}
+###
+POST http://localhost:8000/admin/sys_res_add
+
+{
+    "parent_id":null,
+    "name":"超级管理员权限",
+    "path":null,
+    "permission":"SuperPower"
+}
+###
+POST http://localhost:8000/admin/sys_user_page
+
+{
+
+}
+###
+POST http://localhost:8000/admin/sys_login
+
+{
+    "account":"00000000000",
+    "password":"123456",
+    "vcode":""
+}
+###
+POST http://localhost:8000/admin/sys_user_add
+
+{
+    "account":"1896954211",
+    "password":"123456",
+    "name":"xxxx"
+}

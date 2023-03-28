@@ -33,32 +33,10 @@
 # （rust 服务器端安装）快速安装教程
 
 - 1.abs_admin 启动指令 `cargo run`或者`cargo build`编译可执行文件执行
-- 2.(可选)docker 命令快速启动 redis  `docker run -it -d --name redis -p 6379:6379 redis`
-- 3.(可选，默认数据库Sqlite,mysql需要Cargo.toml添加rbdc_mysql依赖，并修改application.yml中的database_url)docker 命令快速启动 mysql(用户名 root 密码 123456)。生产 docker 可以建议部署 http 服务，原则上生产环境不建议用 docker 部署数据库 `docker run -d -p 3306:3306 -e MYSQL_ROOT_PASSWORD=123456 --name mysql -e TZ=Asia/Shanghai mysql:5.7`
-- 4.（rust 服务器端安装）使用 Clion Database 窗口 或者 MysqlWorkBench 或 Navicat 等工具 导入 database.sql 脚本到  数据库
-
-# （前端 node 服务安装）快速安装教程
-
-- 1.（前端安装）阅读并克隆前端项目 https://github.com/rbatis/abs_admin_vue, 安装nodejs
-
-- 2.（前端安装）使用`yarn install`安装依赖（或者使用淘宝代理`yarn config set registry http://registry.npm.taobao.org/ `）并使用 `yarn serve`命令启动 web 前端
-
-- 3.（前端安装）打开浏览器 http://localhost:8001 即可登陆后台
-
-# （postman 导入）教程
-
-- 1.（postman 安装）安装打开 PostMan ，导入 postman.json 到 postman 中即可使用写好的请求
-
-```cmd
-打开postman,导入 postman.json
-```
-
-- 2.（postman 安装）使用 Clion 克隆导入 abs_admin 项目，点开 main.rs 点击按钮运行.或执行命令:
-
-```cmd
-cargo update
-cargo run
-```
+- 2.(可选)docker 命令快速启动 redis `docker run -it -d --name redis -p 6379:6379 redis`
+- 3.(可选，默认数据库 Sqlite,mysql 需要 Cargo.toml 添加 rbdc_mysql 依赖，并修改 application.yml 中的 database_url)docker 命令快速启动 mysql(用户名 root 密码 123456)。生产 docker 可以建议部署 http 服务，原则上生产环境不建议用 docker 部署数据库 `docker run -d -p 3306:3306 -e MYSQL_ROOT_PASSWORD=123456 --name mysql -e TZ=Asia/Shanghai mysql:5.7`
+- 4.（rust 服务器端安装）使用 Clion Database 窗口 或者 MysqlWorkBench 或 Navicat 等工具 导入 database.sql 脚本到 数据库
+~~~~
 
 # module(模块)
 
