@@ -57,3 +57,9 @@ anyhow = "1"
 async-trait = "0.1"
 futures = "0.3"
 tokio = "1"
+
+
+
+[[bin]]
+name = "build-gen"
+path = "volo-gen/build.rs"

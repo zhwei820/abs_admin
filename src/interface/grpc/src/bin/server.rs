@@ -8,7 +8,7 @@ use volo_example::S;
 
 #[volo::main]
 async fn main() {
-    let addr: SocketAddr = "[::]:8080".parse().unwrap();
+    let addr: SocketAddr = "[::]:18081".parse().unwrap();
     let addr = volo::net::Address::from(addr);
 
     Server::new()
